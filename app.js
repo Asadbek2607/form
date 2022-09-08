@@ -6,20 +6,12 @@ const newPassword = document.querySelector('#newPassword');
 const confirmPassword = document.querySelector('#confirmPassword');
 const errorMsg = document.querySelector('#errorMsg');
 const myForm = document.querySelector('.form');
-<<<<<<< HEAD
-
-
-
-
-    submitBtn.addEventListener('click', ($event)=>{
-=======
 
 
 
 
 
 submitBtn.addEventListener('click', ($event)=>{
->>>>>>> bdd9b64d2660777a465dfbbf6403cdec58ac365d
     $event.preventDefault();
     if(firstName.value && email.value && username.value && newPassword.value && confirmPassword.value){
         alert(`Congratulations ${firstName.value}! You have successfully registered`)
@@ -27,12 +19,7 @@ submitBtn.addEventListener('click', ($event)=>{
         alert('Missing information. Please, fill out required fields');
     }
     myForm.reset();
-<<<<<<< HEAD
     });
-
-=======
-})
->>>>>>> bdd9b64d2660777a465dfbbf6403cdec58ac365d
 
 // Checking if both password field is match
 
