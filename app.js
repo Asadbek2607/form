@@ -5,7 +5,7 @@ const username = document.querySelector('#username');
 const newPassword = document.querySelector('#newPassword');
 const confirmPassword = document.querySelector('#confirmPassword');
 const errorMsg = document.querySelector('#errorMsg');
-const myForm = document.querySelector('form');
+const myForm = document.querySelector('.form');
 
 
 
