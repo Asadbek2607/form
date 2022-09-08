@@ -12,7 +12,7 @@ const errorMsg = document.querySelector('#errorMsg');
 
 
 submitBtn.addEventListener('click', ($event)=>{
-    $event.defaultPrevented();
+    $event.preventDefault();
     if(firstName.value && email.value && username.value && newPassword.value && confirmPassword.value){
         alert(`Congratulations ${firstName.value}! You have successfully registered`)
     }else{
