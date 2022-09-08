@@ -18,6 +18,7 @@ submitBtn.addEventListener('click', ($event)=>{
     }else{
         alert('Missing information. Please, fill out required fields');
     }
+    form.clear();
 })
 
 // Checking if both password field is match
