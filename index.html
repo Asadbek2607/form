@@ -7,14 +7,14 @@
 </head>
 <body>
 
-    <form class="form" action="/" method="post">
+    <form class="form">
         <h1 class="form-heading">Create new account</h1>
         <div class="form-fieldset">
             <h2 class="form-title">Personal information</h2>
 
 
             <div class="form-group">
-                <input class="form-input" type="text" name="firstName" required placeholder="First name*">
+                <input class="form-input" type="text" name="firstName" id="firstName" required  placeholder="First name*">
             </div>
             <div class="form-group">
                 <input class="form-input" type="text" name="lastName" placeholder="Last name">
@@ -30,10 +30,10 @@
             </div>
             <div class="form-group">
                 <label class="form-subtitle">Birthday</label>
-                <input class="form-input" type="date" name="birthday" placeholder="Your birthday">
+                <input class="form-input" type="date" name="birthday" placeholder="Your birthday" max="2004-01-01">
             </div>
             <div class="form-group">
-                <input class="form-input" type="email" name="email" required placeholder="Your e-mail*">
+                <input class="form-input" type="email" name="email" id="email" required  placeholder="Your e-mail*">
             </div>
 
             <div class="form-group">
@@ -53,15 +53,15 @@
         <div class="form-fieldset">
             <h2 class="form-title">Security</h2>
             <div class="form-group">
-                <input class="form-input" type="text" required placeholder="Username*">
+                <input class="form-input" type="text" id="username" required placeholder="Username*">
             </div>
 
             <div class="form-group">
-                <input class="form-input" type="password" required placeholder="New password*">
+                <input class="form-input" type="password" id="newPassword" required placeholder="New password*">
             </div>
 
             <div class="form-group">
-                <input class="form-input" type="password" required placeholder="Confirm new password*">
+                <input class="form-input" type="password" id="confirmPassword" required placeholder="Confirm new password*">
             </div>
 
             <div class="form-group">
@@ -94,9 +94,10 @@
             </div>
         </div>
 
-        <button class="form-btn  form-btn-green" type="submit">Submit</button>
+        <button class="form-btn  form-btn-green" type="submit" id="submitBtn">Submit</button>
         <button class="form-btn  form-btn-gray" type="reset">Cancel and clear</button>
     </form>
+    <script src="app.js"></script>
 
 </body>
 </html>
