@@ -5,24 +5,32 @@ const username = document.querySelector('#username');
 const newPassword = document.querySelector('#newPassword');
 const confirmPassword = document.querySelector('#confirmPassword');
 const errorMsg = document.querySelector('#errorMsg');
+const myForm = document.querySelector('.form');
 
 
 
 
-
-
-submitBtn.addEventListener('click', ($event)=>{
-    $event.defaultPrevented();
+    submitBtn.addEventListener('click', ($event)=>{
+    $event.preventDefault();
     if(firstName.value && email.value && username.value && newPassword.value && confirmPassword.value){
         alert(`Congratulations ${firstName.value}! You have successfully registered`)
     }else{
         alert('Missing information. Please, fill out required fields');
     }
-})
+    myForm.reset();
+    });
+
 
 // Checking if both password field is match
 
 confirmPassword.addEventListener('blur', ()=>{
+    validation();
+})
+newPassword.addEventListener('blur', ()=>{
+    validation();
+})
+
+let validation=()=>{
     if(newPassword.value === confirmPassword.value){
         newPassword.style.border = 'thin solid green';
         confirmPassword.style.border = 'thin solid green';
@@ -32,7 +40,7 @@ confirmPassword.addEventListener('blur', ()=>{
         errorMsg.style.display = 'inline';
         errorMsg.style.color = 'red';
     }
-})
+}
 
 confirmPassword.addEventListener('focus', ()=>{
     errorMsg.style.display = 'none';
