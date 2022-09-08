@@ -17,6 +17,10 @@ body {
 .form-fieldset {
     margin-bottom: 40px;
 }
+
+.form-fieldset:nth-child(2) {
+    margin-bottom: 10px;
+}
 .form-heading{
     color: #1784bc;
     font-size: 24px;
