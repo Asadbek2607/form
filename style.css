@@ -1,0 +1,127 @@
+body {
+    background-color: #000000;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    color: #121212;
+}
+
+.form {
+    width: 358px;
+    margin: 20px auto 0;
+    padding: 20px;
+
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+}
+
+.form-fieldset {
+    margin-bottom: 40px;
+}
+.form-heading{
+    color: #1784bc;
+    font-size: 24px;
+
+    margin-bottom: 24px;
+}
+.form-title {
+    margin: 0 0 20px;
+
+    color: #1784bc;
+    font-size: 18px;
+}
+
+.form-subtitle{
+    color: #1784bc;
+    margin:0 0 15px 0;
+    font-size: 12px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group-sm {
+    margin-bottom: 10px;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    width: 336px;
+    padding: 8px 10px;
+
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+
+    font-family: inherit;
+    color: #121212;
+    font-size: 15px;
+}
+
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-select {
+    width: 358px;
+}
+
+.form-btn {
+    padding: 10px 15px;
+
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+
+    border: 0;
+    cursor: pointer;
+}
+
+.form-btn-green {
+    padding:10px 30px;
+    background-color: #97c89a;
+}
+.form-btn-green:hover {
+    background-color: #43a748;
+}
+.form-btn-green:active {
+    background-color: #027c08;
+}
+
+.form-btn-gray {
+    background-color: #acacac;
+}
+.form-btn-gray:hover {
+    background-color: #807f7f;
+}
+.form-btn-gray:active {
+    background-color: #4d4d4d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

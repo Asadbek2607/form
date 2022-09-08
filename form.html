@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <form class="form" action="/" method="post">
+        <h1 class="form-heading">Create new account</h1>
+        <div class="form-fieldset">
+            <h2 class="form-title">Personal information</h2>
+
+
+            <div class="form-group">
+                <input class="form-input" type="text" name="firstName" required placeholder="First name*">
+            </div>
+            <div class="form-group">
+                <input class="form-input" type="text" name="lastName" placeholder="Last name">
+            </div>
+
+            <div class="form-group">
+                <label class="form-subtitle">Gender</label> <br>
+                <label for="male">Male</label>
+                <input type="radio" name="choose_male" id="male">
+
+                <label for="female">Female</label>
+                <input type="radio" name="choose_male" id="female">
+            </div>
+            <div class="form-group">
+                <label class="form-subtitle">Birthday</label>
+                <input class="form-input" type="date" name="birthday" placeholder="Your birthday">
+            </div>
+            <div class="form-group">
+                <input class="form-input" type="email" name="email" required placeholder="Your e-mail*">
+            </div>
+
+            <div class="form-group">
+                <input class="form-input" type="tel" name="tel" placeholder="Your phone number">
+            </div>
+
+            <div class="form-group">
+                <input class="form-input" type="text" name="address" placeholder="Your address">
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-textarea" placeholder="About you..."></textarea>
+            </div>
+        </div>
+
+
+        <div class="form-fieldset">
+            <h2 class="form-title">Security</h2>
+            <div class="form-group">
+                <input class="form-input" type="text" required placeholder="Username*">
+            </div>
+
+            <div class="form-group">
+                <input class="form-input" type="password" required placeholder="New password*">
+            </div>
+
+            <div class="form-group">
+                <input class="form-input" type="password" required placeholder="Condirm new password*">
+            </div>
+
+            <div class="form-group">
+                <select class="form-select">
+                    <option>Security question</option>
+                    <option>Question 1</option>
+                    <option>Question 2</option>
+                    <option>Question 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input class="form-input" type="text" placeholder="Answer to security question">
+            </div>
+        </div>
+
+        <div class="form-fieldset">
+            <h2 class="form-title">Enlightenment</h2>
+
+            <div class="form-group-sm">
+                <input type="checkbox" id="notify_email">
+                <label for="notify_email">Receive e-mail about news </label>
+            </div>
+
+            <div class="form-group-sm">
+                <input type="checkbox" id="notify_discounts">
+                <label for="notify_discounts">Receive discount information</label>
+            </div>
+        </div>
+
+        <button class="form-btn  form-btn-green" type="submit">Submit</button>
+        <button class="form-btn  form-btn-gray" type="reset">Cancel and clear</button>
+    </form>
+
+</body>
+</html>
