@@ -5,7 +5,7 @@ const username = document.querySelector('#username');
 const newPassword = document.querySelector('#newPassword');
 const confirmPassword = document.querySelector('#confirmPassword');
 const errorMsg = document.querySelector('#errorMsg');
-
+const myForm = document.querySelector('form');
 
 
 
@@ -18,7 +18,7 @@ submitBtn.addEventListener('click', ($event)=>{
     }else{
         alert('Missing information. Please, fill out required fields');
     }
-    form.clear();
+    form.reset();
 })
 
 // Checking if both password field is match
